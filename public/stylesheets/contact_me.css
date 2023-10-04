@@ -1,0 +1,62 @@
+/*
+---------------------------------
+FILENAME: contact_me.css
+PURPOSE: Main stylesheet for the 'contact_me.ejs' file
+AUTHOR: Gang Liu
+LAST MODIFIED: 03-10-2023
+---------------------------------
+*/
+
+/* ================== Form Styles ====================*/
+
+fieldset {
+  margin: 1.6rem 0;
+  padding: 1.6rem;
+}
+
+input[type="submit"],
+input[type="reset"] {
+  background-color: #bdc2bf;
+  border: none;
+  color: #25291c;
+  padding: 1.6rem 3rem;
+  text-decoration: none;
+  margin: 0.4rem 0.2rem;
+  cursor: pointer;
+  border-radius: 0.5rem;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #989c94;
+}
+
+/* ===================== Main Section Styles =================== */
+.contact-title {
+  font-size: 1.6rem;
+  line-height: 1.5rem;
+}
+
+.contact-main {
+  margin: 2.4rem 0;
+  background-color: #fefeff;
+  font-size: 1.6rem;
+}
+
+.contact-container p {
+  margin-bottom: 1.2rem;
+}
+
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.buttons {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 20px;
+}

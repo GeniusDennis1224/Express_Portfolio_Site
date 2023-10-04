@@ -1,0 +1,111 @@
+<%- include("partials/header.ejs") %>
+
+<!-- ------------------ Main Section --------------------->
+<main class="contact-main">
+  <div class="contact-container">
+    <p class="contact-title">
+      Please fill out the following information, we will match an agent for you
+      based on your preferences:
+    </p>
+
+    <form action="/submit" method="post" class="preference-form">
+      <div class="personal-info">
+        <fieldset>
+          <legend>Personal Information:</legend>
+          <label for="fName">First Name: </label>
+          <input
+            type="text"
+            name="fName"
+            ,
+            id="fName"
+            ,
+            placeholder="Your First Name: "
+            required
+          />
+          <br /><br />
+          <label for="lName">Last Name: </label>
+          <input
+            type="text"
+            name="lName"
+            ,
+            id="lName"
+            ,
+            placeholder="Your Last Name: "
+            required
+          />
+          <br /><br />
+          <label for="emails">Email: </label>
+          <input
+            type="email"
+            name="emails"
+            id="emails"
+            placeholder="Your Email: "
+          />
+          <br /><br />
+          <label for="phone">Phone: </label>
+          <input
+            type="tel"
+            name="phone"
+            id="phone"
+            placeholder="888-888-8888"
+          />
+        </fieldset>
+      </div>
+
+      <div class="preferences">
+        <fieldset>
+          <legend>Service Category You Are Seeking:</legend>
+          <label for="service-type">Service Category</label>
+          <select name="service-type" id="service-type">
+            <option value="web-development">Web Development</option>
+            <option value="ios-android--mobile-development">
+              ios & Andoird Mobile Development
+            </option>
+            <option value="ai-development">
+              Artificial Intelligence Development
+            </option>
+          </select>
+          <br /><br />
+
+          <label for="location">Location</label>
+          <select name="location" id="location">
+            <option value="toronto">Toronto</option>
+            <option value="mississauga">Mississauga</option>
+            <option value="markham">Markham</option>
+            <option value="richmond-hill">Richmond Hill</option>
+            <option value="oakville">Oakville</option>
+            <option value="burlington">Burlington</option>
+            <option value="milton">Milton</option>
+            <option value="brampton">Brampton</option>
+            <option value="aurora">Aurora</option>
+            <option value="new-market">New Market</option>
+          </select>
+          <br /><br />
+
+          <label for="budget">Your Budget</label>
+          <input type="range" id="price" name="price" min="5000" max="100000" />
+        </fieldset>
+        <fieldset>
+          <legend>Other Preferences:</legend>
+          <textarea
+            name="other-pref"
+            id="other-pref"
+            cols="60"
+            rows="10"
+          ></textarea>
+        </fieldset>
+      </div>
+
+      <div class="buttons">
+        <div class="btn-submit">
+          <input type="submit" value="Submit" />
+        </div>
+        <div class="btn-reset">
+          <input type="reset" value="Reset Form" />
+        </div>
+      </div>
+    </form>
+  </div>
+</main>
+
+<%- include("partials/footer.ejs") %>

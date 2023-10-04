@@ -1,0 +1,115 @@
+/*
+---------------------------------
+FILENAME: services.css
+PURPOSE: Main stylesheet for the 'services.ejs' file
+AUTHOR: Gang Liu
+LAST MODIFIED: 03-10-2023
+---------------------------------
+*/
+
+/* =======================Main Section Styles ===================== */
+
+.services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.individual-service {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  width: 30rem;
+  height: 45rem;
+  border-radius: 0.7rem;
+  margin: 1.2rem 3rem;
+}
+
+.service-img {
+  width: 30rem;
+  height: 22rem;
+  object-fit: cover;
+  background-color: #eee;
+  border-top-right-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+}
+
+.service-data {
+  padding: 2.5rem 3.75rem 3rem 3.75rem;
+  position: relative;
+}
+
+.service-name {
+  font-size: 2.7rem;
+  margin-bottom: 0.7rem;
+}
+
+.service-info {
+  font-size: 1.4rem;
+  margin-top: 2.5rem;
+  color: #888;
+  line-height: 1.2rem;
+}
+
+/**--------------------*/
+
+.images-area {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.6rem;
+  background-color: #eeebd0;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.details-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+  font-size: 1.6rem;
+  margin: 0 1.2rem;
+  line-height: 2.4rem;
+}
+
+.property-data {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1.6rem;
+  column-gap: 1.8rem;
+}
+
+span {
+  color: orange;
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1.2rem;
+  row-gap: 1.2rem;
+  align-items: center;
+  padding: 1.6rem;
+}
+
+.images-item {
+  overflow: hidden;
+}
+
+.images-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.images-item img:hover {
+  transform: scale(1.1);
+}
